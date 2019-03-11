@@ -20,20 +20,20 @@ img {
   display: table;
 }
 
-.wrapper {
-  width: 1110px;
+.container {
   margin: 0 auto;
-  background-color: #fff;
 }
 
 /* HEADER */
 
 .header-size {
-  padding-top: 36px;
-  margin-bottom: 58px;
+  padding: 36px 0 58px;
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .logo {
+  display: block;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
@@ -52,6 +52,7 @@ img {
 }
 
 .menu {
+  display: block;
   width: 466px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -124,6 +125,7 @@ img {
 }
 
 .text-position {
+  display: block;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -143,6 +145,7 @@ img {
 }
 
 .next {
+  background-image: url(../photo/icon/arrow-right.jpg);
   display: inline-block;
   position: absolute;
   padding: 0;
@@ -150,12 +153,21 @@ img {
   right: 15.3125%;
 }
 
+.next:hover {
+  opacity: 0.8;
+}
+
 .prev {
+  background-image: url(../photo/icon/arrow-left.jpg);
   display: inline-block;
   position: absolute;
   padding: 0;
   top: 37.5%;
   left: 15.3125%;
+}
+
+.prev:hover {
+  opacity: 0.8;
 }
 
 /* MAIN */
@@ -185,7 +197,7 @@ img {
 
 .product-place-wrapper {
   margin: 0 auto;
-  padding: 110px 0 70px;
+  padding: 110px 0 100px;
   background-color: #e9f0fd;
 }
 
@@ -198,7 +210,7 @@ img {
 .products-content .card {
   display: block;
   width: 255px;
-  margin: 0 30px 30px 0;
+  margin-right: 30px;
   background: #e9f0fd;
   float: left;
 }
@@ -226,6 +238,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.buy-window-position {
+  vertical-align: middle;
 }
 
 .icon-item {
@@ -331,6 +347,29 @@ img {
 
 .card:hover .price {
   background-color: #7fd9c7;
+}
+
+.buy-window__menu {
+  width: 255px;
+  height: 282px;
+  display: block;
+  padding: 78px 34px 0;
+}
+
+.buy-window__item {
+  float: left;
+}
+
+.buy-window__item:nth-child(-n+2) {
+  margin-right: 8px;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.cart-icon {
+  margin: 0 auto;
 }
 
 /* FOOTER */
