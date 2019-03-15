@@ -238,6 +238,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 
 .buy-window-position {
@@ -308,6 +309,7 @@ img {
 .card:hover .buy-window {
   border-color: rgb(255, 255, 255);
   background: rgb(0, 0, 0, 0.569);
+  opacity: 1;
 }
 
 .price-wrapper {
